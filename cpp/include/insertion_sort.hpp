@@ -60,13 +60,13 @@ InsertionSort<T>::~InsertionSort ()
 template <typename T>
 void InsertionSort<T>::sortForward (int steps)
 {
-    
-    for (int i = 0; i < steps; i++)
+    for (size_t stepCount = 0; stepCount < steps; stepCount++)
     {
-        if (i == data.size())
+        if (i >= data.size ())
             return;
 
         sortForIter ();
+        i++;
     }
 }
 
@@ -76,8 +76,7 @@ void InsertionSort<T>::sortForIter ()
     T key = data[i];
 
     size_t j = i - 1;
-
-    while (j > 0 && data[j] > key)
+    while (j >= 0 && data[j] > key)
     {
         data[j + 1] = data[j];
         j--;
