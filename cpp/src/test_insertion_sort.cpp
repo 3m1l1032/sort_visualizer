@@ -22,7 +22,7 @@ int main ()
         {
             InsertionSort<int> constructorInt;
 
-            cout << "PASSED" << endl;
+            cout << "PASSED - " << constructorInt.operations << endl;
             passed++;
         }
         catch (const std::exception& e)
@@ -41,7 +41,7 @@ int main ()
         {
             InsertionSort<std::string> constructorString;
 
-            cout << "PASSED" << endl;
+            cout << "PASSED - " << constructorString.operations << endl;
             passed++;
         }
         catch (const std::exception& e)
@@ -74,7 +74,7 @@ int main ()
             if (insertInt.data[3] != 3)
                 throw "failed";
 
-            cout << "PASSED" << endl;
+            cout << "PASSED - " << insertInt.operations << endl;
             passed++;
         }
         catch (const std::exception& e)
@@ -95,7 +95,7 @@ int main ()
 
             sortZeroInt.sortForward (MAX_STEPS);
 
-            cout << "PASSED" << endl;
+            cout << "PASSED - " << sortZeroInt.operations << endl;
             passed++;
         }
         catch (const std::exception& e)
@@ -121,7 +121,7 @@ int main ()
             if (sortOneInt.data[0] != 3)
                 throw "failed";
 
-            cout << "PASSED" << endl;
+            cout << "PASSED - " << sortOneInt.operations << endl;
             passed++;
         }
         catch (const std::exception& e)
@@ -174,7 +174,7 @@ int main ()
             if (sortTenInt.data[9] != 100)
                 throw "failed";
 
-            cout << "PASSED" << endl;
+            cout << "PASSED - " << sortTenInt.operations << endl;
             passed++;
         }
         catch (const std::exception& e)
@@ -227,7 +227,7 @@ int main ()
             if (sortOneStep.data[9] != 3)
                 throw "failed";
 
-            cout << "PASSED" << endl;
+            cout << "PASSED - " << sortOneStep.operations << endl;
             passed++;
         }
         catch (const std::exception& e)
@@ -280,7 +280,7 @@ int main ()
             if (sortTwoStep.data[9] != 3)
                 throw "failed";
 
-            cout << "PASSED" << endl;
+            cout << "PASSED - " << sortTwoStep.operations << endl;
             passed++;
         }
         catch (const std::exception& e)
@@ -348,7 +348,7 @@ int main ()
                     throw "failed";
             }
 
-            cout << "PASSED" << endl;
+            cout << "PASSED - " << sortByStep.operations << endl;
             passed++;
         }
         catch (const std::exception& e)
