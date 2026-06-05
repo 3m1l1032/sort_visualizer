@@ -12,9 +12,11 @@
 #include <exception>
 #include <stdexcept>
 #include <string>
+#include <vector>
 
 using std::cout;
 using std::endl;
 using std::cerr;
+using std::vector;
 
 #endif /*  __MAIN_HPP__  */
