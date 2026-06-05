@@ -21,3 +21,12 @@ target_sources(test_insertion_sort
     PUBLIC
         cpp/include/insertion_sort.hpp
 )
+
+# main executable
+add_executable(insertion_sort)
+target_sources(insertion_sort
+    PRIVATE
+        cpp/src/main.cpp
+    PUBLIC
+        cpp/include/main.hpp
+)

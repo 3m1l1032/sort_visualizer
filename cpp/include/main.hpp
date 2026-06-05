@@ -14,6 +14,8 @@
 #include <string>
 #include <vector>
 
+#include "algorithms.hpp"
+
 using std::cout;
 using std::endl;
 using std::cerr;
