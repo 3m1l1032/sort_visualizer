@@ -1,5 +1,5 @@
 /* 
- * Emilio Cazares Borbon, 2026
+ * Emilio Cazares Borbon, June 2026
  * 
  * Header file to contain all header files (to keep `main.hpp` simple).
  */
